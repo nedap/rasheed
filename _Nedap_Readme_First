@@ -1,0 +1,16 @@
+Please read the licenses first. This is for building MVP and deploy in staging environment ONLY!
+
+git clone https://github.com/nedap/rasheed.git
+
+cd rasheed
+
+sh tools/deploy.sh  - to generate .env file
+
+docker compose -p activepieces up  - to start in docker
+
+I had problem with postgre database (had existing volume)
+	- deleted the volume
+	- sh tools/reset.sh 
+
+Open in browser - and register yourself
+http://localhost:8080/
