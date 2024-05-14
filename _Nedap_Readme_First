@@ -14,3 +14,31 @@ I had problem with postgre database (had existing volume)
 
 Open in browser - and register yourself
 http://localhost:8080/
+
+
+
+Development
+
+make sure you have node 20
+brew install node@20
+brew unlink node
+brew link node@20
+node -v
+in case of error
+brew link --overwrite node@20
+
+setup env
+node tools/setup-dev.js
+
+start env
+npm start
+
+http://localhost:4200/sign-in
+Email: dev@ap.com Password: 12345678
+
+
+This should have autoreload done
+I tested this on flows-table.component.html file in line 7
+<div>TEST 456</div>
+http://localhost:4200/flows - you can see this text
+If you change 456 to 123, you can see reloading in terminal and page should refresh after a few seconds
