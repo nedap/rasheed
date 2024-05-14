@@ -42,3 +42,8 @@ I tested this on flows-table.component.html file in line 7
 <div>TEST 456</div>
 http://localhost:4200/flows - you can see this text
 If you change 456 to 123, you can see reloading in terminal and page should refresh after a few seconds
+
+
+IN ORDER TO ADD PIECES
+AP_DEV_PIECES=google-sheets,cal-com,discord npm start
+just list all names of pieces you want to use before npm start
